@@ -4,14 +4,14 @@
   "private": true,
   "engines": {
     "node": ">=22.16",
-    "pnpm": ">=10.2.1"
+    "pnpm": ">=10.2.1",
   }
   "packageManager": "pnpm@10.12.1",
   "scripts": {
     "prepare": "node scripts/prepare.mjs",
     "preinstall": "node scripts/block-npm-install.js",
     "build": "npm run build:n8n", 
-    "start": "node packages/cli/bin/n8n"
+    "start": "node packages/cli/bin/n8n",
     "build:backend": "turbo run build:backend",
     "build:frontend": "turbo run build:frontend",
     "build:nodes": "turbo run build:nodes",
