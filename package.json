@@ -58,6 +58,7 @@
     "n8n": "1.104.0"
   },
   "devDependencies": {
+    "zx": "^8.7.1"
     "@biomejs/biome": "^1.9.0",
     "@n8n/eslint-config": "workspace:*",
     "@types/jest": "^29.5.3",
