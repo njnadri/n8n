@@ -4,13 +4,13 @@
   "private": true,
   "engines": {
     "node": ">=22.16",
-    "pnpm": ">=10.2.1",
-  }
+    "pnpm": ">=10.2.1"
+  },
   "packageManager": "pnpm@10.12.1",
   "scripts": {
     "prepare": "node scripts/prepare.mjs",
     "preinstall": "node scripts/block-npm-install.js",
-    "build": "npm run build:n8n", 
+    "build": "npm run build:n8n",
     "start": "node packages/cli/bin/n8n",
     "build:backend": "turbo run build:backend",
     "build:frontend": "turbo run build:frontend",
@@ -41,7 +41,6 @@
     "lint:testing": "turbo run lint:testing",
     "optimize-svg": "find ./packages -name '*.svg' ! -name 'pipedrive.svg' -print0 | xargs -0 -P16 -L20 npx svgo",
     "setup-backend-module": "node scripts/ensure-zx.mjs && zx scripts/backend-module/setup.mjs",
-    "start": "run-script-os",
     "start:default": "cd packages/cli/bin && ./n8n",
     "start:tunnel": "./packages/cli/bin/n8n start --tunnel",
     "start:windows": "cd packages/cli/bin && n8n",
