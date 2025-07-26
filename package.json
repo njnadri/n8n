@@ -55,7 +55,8 @@
     "worker": "./packages/cli/bin/n8n worker"
   },
   "dependencies": {
-    "n8n": "1.104.0"
+    "n8n": "1.104.0",
+    "zx": "^8.7.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.0",
